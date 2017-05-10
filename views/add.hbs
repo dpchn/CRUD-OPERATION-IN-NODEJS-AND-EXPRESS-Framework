@@ -1,0 +1,18 @@
+<h1>{{title}}</h1>
+
+<script>
+
+var c = 0;
+</script>
+	
+		{{#each arr}}
+		            <p>{{this}}</p>
+		            <script>
+		            		
+							c = c+{{this}};	 
+							if({{@index}}==4)
+		            		 document.write("Total sum of Array is = ",c);
+		            </script>
+		{{/each}}
+
+</p>

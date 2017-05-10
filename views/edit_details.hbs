@@ -1,0 +1,28 @@
+<html>
+<body>
+	<form action = '/ass_crud/update_details/{{result.ID}}' method = 'POST' align = 'center'>
+	<table align='center'>
+	 	<tr>
+			<td>First Name</td> <td>: 
+			<td><input type = 'text' id = 'idfname' name = 'fname' value = '{{result.firstName}}' />
+		</tr>
+
+		<tr>
+			<td>Last Name
+			<td> : 
+			<td><input type = 'text' id = 'idlname' name = 'lname' value = '{{result.lastName}}' />
+		</tr>
+
+		<tr>
+			<td>Roll Number 
+			<td>: 
+			<td><input type = 'text' id = 'idroll' name = 'roll_num' value = '{{result.RollNumber}}' />
+	</table>
+
+		<input type = 'submit' value = 'Update' />
+	</form>
+
+</html>
+
+
+

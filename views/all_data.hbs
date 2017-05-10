@@ -1,0 +1,23 @@
+
+<table border =1 align = 'center'>
+	<th>ID</th>
+	<th>First Name</th>
+	<th>Last Name</th>
+	<th>Roll Number</th>
+	<th>Password</th>
+	<th> Action</th>
+		{{# each result}}
+			 	<tr>	
+			 		<td>{{this.ID}}</td>
+			 		<td> {{this.firstName}}</td>
+			 		<td> {{this.lastName}}</td>
+			 		<td> {{this.RollNumber}}</td>
+			 		<td> {{this.Password}} </td>
+			 		<td>  <a  href="/ass_crud/edit/{{this.RollNumber}}">Edit</a> <a  href="/ass_crud/delete/{{this.RollNumber}}">Delete</a>   </td>
+			 	</tr>	
+		{{/each}}
+ </table>
+
+<form action = '/ass_crud/add_new' method ="GET" align = 'center'>
+<input type ='Submit' value = 'ADD New Student'/>
+</form>
